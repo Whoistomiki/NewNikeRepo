@@ -1,0 +1,39 @@
+#Docker compose pour node en backend et react en frontend et postgres en base de données
+
+version: '3'
+services:
+  db:
+    image: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
+    ports:
+      - "5431:5432"
+    volumes:
+      - ./data:/var/lib/postgresql/data
+  backend:
+    environment: 
+      - DB_URL=postgres://postgres:postgres@db:5432/postgres
+      - PORT=3000
+      - SECRET_KEY=secret
+    image: node
+    working_dir: /app
+    volumes:
+      - ./backend:/app
+    ports:
+      - "3001:3000"
+    depends_on:
+      - db
+    command: sh -c "npm install && npm start"
+
+  frontend:
+    image: node
+    working_dir: /app
+    volumes:
+      - ./frontend:/app
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    command: sh -c "npm install && npm start"

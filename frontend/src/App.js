@@ -28,7 +28,7 @@ function App() {
               </>
             } />
             <Route path="/identifier" element={<PageIdentification />} />
-            <Route path="/inscription" element={<PageInscription />} />
+            <Route path="/signup" element={<PageInscription />} />
           </Routes>
         </main>
         <Footer />

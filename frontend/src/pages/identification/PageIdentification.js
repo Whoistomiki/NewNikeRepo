@@ -27,7 +27,7 @@ const PageIdentification = () => {
             <button type="submit" className="w-full bg-white text-black py-2 px-4">Se connecter</button>
           </form>
 
-          <p className="mt-4 text-center text-sm">Pas encore membre? <Link to="/inscription" className="font-medium"><u>Rejoins-nous</u></Link></p>
+          <p className="mt-4 text-center text-sm">Pas encore membre? <Link to="/signup" className="font-medium"><u>Rejoins-nous</u></Link></p>
         </div>
       </div>
     </div>
