@@ -1,28 +1,7 @@
-USERS:
-user_id (PK)
-firstname
-lastname
-email (unique, not null)
-user_password
+USERS: id, firstname, lastname, email, password
 
-ORDERS :
-order_id (PK)
-order_date
-order_status
-total_amount
-user_id (FK vers USERS)
+ORDERS : id, ,order_date, order_status, total_amount, user_id
 
-ORDER_ITEMS :
-order_item_id (PK)
-quantity
-unit_price
-order_id (FK vers ORDERS)
-product_id (FK vers PRODUCTS)
+ORDER_ITEMS : id, order_items_quantity, unit_price, order_id, product_id
 
-PRODUCTS :
-product_id (PK)
-product_name
-product_description
-product_price
-product_size
-stock_quantity
+PRODUCTS : id, product_name, product_description, product_price, product_size, stock_quantity
