@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: transparent;
+    color: white;
+    position: relative;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+  
+img.rotate{
+    width: 50%;
+    height: auto;
+   -webkit-animation: rotateY 2s infinite linear;
+    animation: rotateY 2s infinite linear;
+}
+@-webkit-keyframes rotateY {
+    to { -webkit-transform: rotateY(360deg); }
+}
+@keyframes rotateY {
+    to { transform: rotateY(360deg); }
+}

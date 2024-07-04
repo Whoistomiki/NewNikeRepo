@@ -1,0 +1,39 @@
+.section-presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10rem 4rem;
+    color: white;
+    position: relative; 
+}
+
+.section-title {
+    font-size: 60px;
+    font-family: 'Zen Dots', sans-serif;
+    margin-bottom: 1rem;
+    position: relative; 
+    z-index: 2; 
+}
+
+.section-text {
+    font-size: 30px;
+    max-width: 1400px;
+    line-height: 1.5;
+    position: relative; 
+    z-index: 2;
+}
+
+.logo-background {
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 60%;
+    height: auto;
+    z-index: 1; 
+}
