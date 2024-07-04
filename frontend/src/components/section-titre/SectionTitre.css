@@ -1,0 +1,10 @@
+.section-title-1 {
+    font-size: 4rem;
+    font-family: 'Zen Dots', sans-serif;
+    margin: 0;
+    padding: 8rem 3rem;
+    text-align: left;
+    position: relative;
+    left: 2rem; 
+    color: white;
+}

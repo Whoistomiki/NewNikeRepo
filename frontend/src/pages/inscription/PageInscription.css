@@ -1,0 +1,28 @@
+.inscription-page {
+    min-height: calc(100vh - 4rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .inscription-form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: transparent;
+  }
+
+  .logo {
+    filter: grayscale(100%) invert(100%);
+  }
+  
+  .form-input {
+    appearance: none;
+    background-color: #ffffff;
+    border: 1px solid #d2d6dc;
+    padding: 0.5rem;
+    line-height: 1.25;
+    width: 100%;
+    margin-top: 0.25rem;
+    margin-bottom: 0.5rem;
+    color: black;
+  }

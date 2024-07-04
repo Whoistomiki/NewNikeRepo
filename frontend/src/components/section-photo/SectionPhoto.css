@@ -1,0 +1,13 @@
+.section-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    margin: 0 auto; 
+}
+
+.section-photo img {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 25px;
+}
